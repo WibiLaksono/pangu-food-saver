@@ -98,16 +98,6 @@ const Input = () => {
                       </Select>
                     </div>
 
-                    <div className="space-y-2">
-                      <Label htmlFor="food-type">Jenis Makanan</Label>
-                      <InputField
-                        id="food-type"
-                        value={autoType}
-                        placeholder="Otomatis terisi"
-                        readOnly
-                        className="bg-muted"
-                      />
-                    </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="price">Harga Rata-rata (Rp)</Label>
@@ -182,7 +172,7 @@ const Input = () => {
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="ingredient-name">Nama Bahan</Label>
                       <InputField
@@ -191,22 +181,6 @@ const Input = () => {
                       />
                     </div>
 
-                    <div className="space-y-2">
-                      <Label htmlFor="ingredient-type">Jenis Bahan</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Pilih jenis bahan" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="vegetable">Sayuran</SelectItem>
-                          <SelectItem value="fruit">Buah-buahan</SelectItem>
-                          <SelectItem value="protein">Protein (daging, ikan)</SelectItem>
-                          <SelectItem value="grain">Biji-bijian</SelectItem>
-                          <SelectItem value="dairy">Produk susu</SelectItem>
-                          <SelectItem value="other">Lainnya</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="ingredient-price">Harga Rata-rata (Rp)</Label>
