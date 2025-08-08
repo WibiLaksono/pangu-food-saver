@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import Navbar from "@/components/ui/navbar";
 import { Link } from "react-router-dom";
 import { ArrowRight, BarChart3, Target, Users, Leaf, TrendingDown, DollarSign, Shield } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+import heroVideoSimulation from "@/assets/hero-video-simulation.jpg";
 import foodWasteSteps from "@/assets/food-waste-steps.jpg";
 import wasteStatistics from "@/assets/waste-statistics.jpg";
 
@@ -72,10 +72,94 @@ const Index = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary-glow/20 rounded-3xl blur-3xl"></div>
               <img 
-                src={heroImage} 
-                alt="Food waste prevention" 
+                src={heroVideoSimulation} 
+                alt="Video simulasi penggunaan Pangu untuk mengurangi food waste" 
                 className="relative z-10 w-full h-96 object-cover rounded-3xl shadow-glow"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* User Flow / Roadmap Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4 text-foreground">
+              Roadmap Penggunaan <span className="text-primary">Pangu</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Ikuti langkah-langkah berikut untuk memaksimalkan manfaat Pangu
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+              {/* Timeline line */}
+              <div className="absolute left-1/2 transform -translate-x-0.5 w-1 h-full bg-gradient-to-b from-primary to-primary-glow"></div>
+              
+              <div className="space-y-16">
+                <div className="flex items-center">
+                  <div className="flex-1 text-right pr-8">
+                    <div className="bg-background p-6 rounded-2xl shadow-card border border-border/50">
+                      <h3 className="text-xl font-bold text-primary mb-2">1. Mulai Input Data</h3>
+                      <p className="text-muted-foreground">Catat sampah makanan harian Anda melalui halaman input data. Sistem akan otomatis mengisi jenis dan harga makanan.</p>
+                      <Link to="/input" className="inline-block mt-3">
+                        <Button variant="outline" size="sm">Ke Halaman Input</Button>
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold z-10 relative">
+                    1
+                  </div>
+                  <div className="flex-1 pl-8"></div>
+                </div>
+
+                <div className="flex items-center">
+                  <div className="flex-1 pr-8"></div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold z-10 relative">
+                    2
+                  </div>
+                  <div className="flex-1 text-left pl-8">
+                    <div className="bg-background p-6 rounded-2xl shadow-card border border-border/50">
+                      <h3 className="text-xl font-bold text-primary mb-2">2. Pantau Dashboard</h3>
+                      <p className="text-muted-foreground">Lihat analisis real-time dari data yang telah diinput. Dashboard menampilkan tren, pola, dan area yang perlu diperbaiki.</p>
+                      <Link to="/dashboard" className="inline-block mt-3">
+                        <Button variant="outline" size="sm">Ke Dashboard</Button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-center">
+                  <div className="flex-1 text-right pr-8">
+                    <div className="bg-background p-6 rounded-2xl shadow-card border border-border/50">
+                      <h3 className="text-xl font-bold text-primary mb-2">3. Pelajari Edukasi</h3>
+                      <p className="text-muted-foreground">Manfaatkan materi edukasi untuk memahami cara terbaik mengurangi food waste di bisnis Anda.</p>
+                      <Link to="/education" className="inline-block mt-3">
+                        <Button variant="outline" size="sm">Ke Halaman Edukasi</Button>
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold z-10 relative">
+                    3
+                  </div>
+                  <div className="flex-1 pl-8"></div>
+                </div>
+
+                <div className="flex items-center">
+                  <div className="flex-1 pr-8"></div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold z-10 relative">
+                    4
+                  </div>
+                  <div className="flex-1 text-left pl-8">
+                    <div className="bg-background p-6 rounded-2xl shadow-card border border-border/50">
+                      <h3 className="text-xl font-bold text-primary mb-2">4. Implementasi & Optimasi</h3>
+                      <p className="text-muted-foreground">Terapkan rekomendasi AI dan pantau progress pengurangan food waste secara berkelanjutan.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -273,89 +357,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* User Flow / Roadmap Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-foreground">
-              Roadmap Penggunaan <span className="text-primary">Pangu</span>
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Ikuti langkah-langkah berikut untuk memaksimalkan manfaat Pangu
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="relative">
-              {/* Timeline line */}
-              <div className="absolute left-1/2 transform -translate-x-0.5 w-1 h-full bg-gradient-to-b from-primary to-primary-glow"></div>
-              
-              <div className="space-y-16">
-                <div className="flex items-center">
-                  <div className="flex-1 text-right pr-8">
-                    <div className="bg-background p-6 rounded-2xl shadow-card border border-border/50">
-                      <h3 className="text-xl font-bold text-primary mb-2">1. Mulai Input Data</h3>
-                      <p className="text-muted-foreground">Catat sampah makanan harian Anda melalui halaman input data. Sistem akan otomatis mengisi jenis dan harga makanan.</p>
-                      <Link to="/input" className="inline-block mt-3">
-                        <Button variant="outline" size="sm">Ke Halaman Input</Button>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold z-10 relative">
-                    1
-                  </div>
-                  <div className="flex-1 pl-8"></div>
-                </div>
-
-                <div className="flex items-center">
-                  <div className="flex-1 pr-8"></div>
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold z-10 relative">
-                    2
-                  </div>
-                  <div className="flex-1 text-left pl-8">
-                    <div className="bg-background p-6 rounded-2xl shadow-card border border-border/50">
-                      <h3 className="text-xl font-bold text-primary mb-2">2. Pantau Dashboard</h3>
-                      <p className="text-muted-foreground">Lihat analisis real-time dari data yang telah diinput. Dashboard menampilkan tren, pola, dan area yang perlu diperbaiki.</p>
-                      <Link to="/dashboard" className="inline-block mt-3">
-                        <Button variant="outline" size="sm">Ke Dashboard</Button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex items-center">
-                  <div className="flex-1 text-right pr-8">
-                    <div className="bg-background p-6 rounded-2xl shadow-card border border-border/50">
-                      <h3 className="text-xl font-bold text-primary mb-2">3. Pelajari Edukasi</h3>
-                      <p className="text-muted-foreground">Pahami cara menggunakan aplikasi dan pelajari best practices untuk mengurangi food waste di bisnis Anda.</p>
-                      <Link to="/education" className="inline-block mt-3">
-                        <Button variant="outline" size="sm">Ke Halaman Edukasi</Button>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold z-10 relative">
-                    3
-                  </div>
-                  <div className="flex-1 pl-8"></div>
-                </div>
-
-                <div className="flex items-center">
-                  <div className="flex-1 pr-8"></div>
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold z-10 relative">
-                    4
-                  </div>
-                  <div className="flex-1 text-left pl-8">
-                    <div className="bg-background p-6 rounded-2xl shadow-card border border-border/50">
-                      <h3 className="text-xl font-bold text-primary mb-2">4. Implementasi & Evaluasi</h3>
-                      <p className="text-muted-foreground">Terapkan rekomendasi AI dan terus pantau progress. Sistem akan memberikan insight untuk perbaikan berkelanjutan.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Testimonials Section */}
       <section className="py-20 bg-gradient-to-br from-background to-secondary">
