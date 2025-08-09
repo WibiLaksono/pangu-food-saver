@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/ui/navbar";
 import { BookOpen, Users, Target, Leaf, ChefHat, BarChart3, Lightbulb, Recycle } from "lucide-react";
 import educationImage from "@/assets/education-image.jpg";
+import foodWasteSteps from "@/assets/food-waste-steps.jpg";
+import wasteStatistics from "@/assets/waste-statistics.jpg";
 
 const Education = () => {
   return (
@@ -158,10 +160,98 @@ const Education = () => {
           </Card>
         </div>
 
-        {/* Food Waste Education */}
+        {/* Educational Graphics Section */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-center mb-8 text-foreground">
-            Edukasi Food Waste
+            Materi Edukasi Food Waste
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary-glow/20 rounded-3xl blur-2xl"></div>
+              <img 
+                src={foodWasteSteps} 
+                alt="Langkah-langkah mencegah food waste" 
+                className="relative z-10 w-full h-80 object-cover rounded-3xl shadow-glow"
+              />
+            </div>
+            <div className="space-y-6">
+              <h3 className="text-3xl font-bold text-foreground">4 Langkah Mudah Cegah Food Waste</h3>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">1</div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Track & Input Data</h4>
+                    <p className="text-muted-foreground">Catat setiap sampah makanan yang terjadi</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">2</div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Analisis Pola</h4>
+                    <p className="text-muted-foreground">Identifikasi pattern dan tren pemborosan</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">3</div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Rekomendasi AI</h4>
+                    <p className="text-muted-foreground">Dapatkan saran cerdas dari sistem AI</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">4</div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Implementasi</h4>
+                    <p className="text-muted-foreground">Terapkan solusi dan pantau hasilnya</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6 order-2 lg:order-1">
+              <h3 className="text-3xl font-bold text-foreground">Statistik Food Waste Indonesia</h3>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-8 h-8 bg-destructive rounded-full flex items-center justify-center text-destructive-foreground font-bold">!</div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">23-48 juta ton/tahun</h4>
+                    <p className="text-muted-foreground">Total food waste Indonesia, setara dengan 115-184 kg per kapita</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-8 h-8 bg-destructive rounded-full flex items-center justify-center text-destructive-foreground font-bold">Rp</div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">213-551 triliun rupiah</h4>
+                    <p className="text-muted-foreground">Kerugian ekonomi akibat food waste per tahun</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-8 h-8 bg-destructive rounded-full flex items-center justify-center text-destructive-foreground font-bold">%</div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">20-30% dari total produksi</h4>
+                    <p className="text-muted-foreground">Persentase makanan yang terbuang dari total produksi nasional</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative order-1 lg:order-2">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary-glow/20 rounded-3xl blur-2xl"></div>
+              <img 
+                src={wasteStatistics} 
+                alt="Statistik food waste Indonesia" 
+                className="relative z-10 w-full h-80 object-cover rounded-3xl shadow-glow"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Food Waste Education Stats */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-center mb-8 text-foreground">
+            Dampak Food Waste Global
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

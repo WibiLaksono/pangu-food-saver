@@ -5,8 +5,6 @@ import Navbar from "@/components/ui/navbar";
 import { Link } from "react-router-dom";
 import { ArrowRight, BarChart3, Target, Users, Leaf, TrendingDown, DollarSign, Shield } from "lucide-react";
 import heroVideoSimulation from "@/assets/PANGU.mp4";
-import foodWasteSteps from "@/assets/food-waste-steps.jpg";
-import wasteStatistics from "@/assets/waste-statistics.jpg";
 
 const Index = () => {
   return (
@@ -273,88 +271,208 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Educational Graphics Section */}
-      <section className="py-20 bg-background">
+      {/* Pricing Section */}
+      <section className="py-20 bg-gradient-to-br from-background to-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-foreground">
-              Edukasi <span className="text-primary">Food Waste</span>
+              Layanan <span className="text-primary">Pangu</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Pelajari langkah-langkah mudah untuk mengurangi pemborosan makanan
+              Pilih paket yang sesuai dengan kebutuhan bisnis Anda
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary-glow/20 rounded-3xl blur-2xl"></div>
-              <img 
-                src={foodWasteSteps} 
-                alt="Langkah-langkah mencegah food waste" 
-                className="relative z-10 w-full h-80 object-cover rounded-3xl shadow-glow"
-              />
-            </div>
-            <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-foreground">4 Langkah Mudah Cegah Food Waste</h3>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">1</div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Track & Input Data</h4>
-                    <p className="text-muted-foreground">Catat setiap sampah makanan yang terjadi</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">2</div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Analisis Pola</h4>
-                    <p className="text-muted-foreground">Identifikasi pattern dan tren pemborosan</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">3</div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Rekomendasi AI</h4>
-                    <p className="text-muted-foreground">Dapatkan saran cerdas dari sistem AI</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">4</div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Implementasi</h4>
-                    <p className="text-muted-foreground">Terapkan solusi dan pantau hasilnya</p>
-                  </div>
-                </div>
-              </div>
+            <div className="mt-4 text-center">
+              <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full font-medium">
+                Dengan free trial 7 hari
+              </span>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20">
-            <div className="space-y-6 lg:order-2">
-              <h3 className="text-3xl font-bold text-foreground">Statistik Food Waste Indonesia</h3>
-              <div className="space-y-4">
-                <div className="bg-card p-4 rounded-lg border border-border/50">
-                  <div className="text-2xl font-bold text-destructive">48 Juta Ton</div>
-                  <div className="text-muted-foreground">Sampah makanan per tahun di Indonesia</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Basic Plan */}
+            <Card className="shadow-card border-border/50 hover:shadow-glow transition-all duration-300 relative">
+              <CardHeader className="text-center pb-4">
+                <div className="mb-2">
+                  <h3 className="text-xl font-bold text-primary">Basic</h3>
+                  <p className="text-sm text-muted-foreground">(katering, usaha kecil)</p>
                 </div>
-                <div className="bg-card p-4 rounded-lg border border-border/50">
-                  <div className="text-2xl font-bold text-warning">Rp 551 Triliun</div>
-                  <div className="text-muted-foreground">Kerugian ekonomi akibat food waste</div>
-                </div>
-                <div className="bg-card p-4 rounded-lg border border-border/50">
-                  <div className="text-2xl font-bold text-primary">30%</div>
-                  <div className="text-muted-foreground">Pengurangan yang bisa dicapai dengan Pangu</div>
-                </div>
+                <div className="text-3xl font-bold text-foreground">Rp300.000</div>
+                <div className="text-sm text-muted-foreground">/3 bulan</div>
+                <div className="text-xs text-muted-foreground">$18.32/3 month</div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    1 User
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Pencatatan food waste
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Dashboard food waste
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Insight dan rekomendasi
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Panduan dan edukasi
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Penyimpanan 500MB
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    700 input
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Onboarding 1x
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Hotline (maks. 48 jam)
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Canteen/Standard Plan */}
+            <Card className="shadow-card border-border/50 hover:shadow-glow transition-all duration-300 relative border-primary/50">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">
+                  Populer
+                </span>
               </div>
-            </div>
-            <div className="relative lg:order-1">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary-glow/20 rounded-3xl blur-2xl"></div>
-              <img 
-                src={wasteStatistics} 
-                alt="Statistik food waste Indonesia" 
-                className="relative z-10 w-full h-80 object-cover rounded-3xl shadow-glow"
-              />
-            </div>
+              <CardHeader className="text-center pb-4">
+                <div className="mb-2">
+                  <h3 className="text-xl font-bold text-primary">Canteen/Standard</h3>
+                  <p className="text-sm text-muted-foreground">(kantin, pujasera)</p>
+                </div>
+                <div className="text-3xl font-bold text-foreground">start Rp500.000</div>
+                <div className="text-sm text-muted-foreground">/bulan</div>
+                <div className="text-xs text-muted-foreground">start $30.53/month</div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Semua di paket basic untuk masing-masing user
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    &gt;= 5 User
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Onboarding 1x
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Hotline (maks. 24 jam)
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Chef/Pro Plan */}
+            <Card className="shadow-card border-border/50 hover:shadow-glow transition-all duration-300 relative">
+              <CardHeader className="text-center pb-4">
+                <div className="mb-2">
+                  <h3 className="text-xl font-bold text-primary">Chef/Pro</h3>
+                  <p className="text-sm text-muted-foreground">(restoran)</p>
+                </div>
+                <div className="text-3xl font-bold text-foreground">Rp2.500.000</div>
+                <div className="text-sm text-muted-foreground">/bulan</div>
+                <div className="text-xs text-muted-foreground">$152.67/month</div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    1 User
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Pencatatan food waste
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Dashboard food waste
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Integrasi POS
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Insight dan rekomendasi berbasis Machine Learning
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Penyimpanan tak terbatas
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Onboarding 4x
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Hotline (maks. 12 jam)
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Enterprise Plan */}
+            <Card className="shadow-card border-border/50 hover:shadow-glow transition-all duration-300 relative">
+              <CardHeader className="text-center pb-4">
+                <div className="mb-2">
+                  <h3 className="text-xl font-bold text-primary">Enterprise</h3>
+                  <p className="text-sm text-muted-foreground">(franchise, hotel)</p>
+                </div>
+                <div className="text-3xl font-bold text-foreground">start Rp6.995.000</div>
+                <div className="text-sm text-muted-foreground">/bulan</div>
+                <div className="text-xs text-muted-foreground">start $427.16/month</div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Semua di paket pro
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Custom User
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Akses backup otomatis mingguan
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Sistem keamanan dan identity/access management
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    SLA support
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Onboarding tak terbatas
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    Hotline 24/7
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
