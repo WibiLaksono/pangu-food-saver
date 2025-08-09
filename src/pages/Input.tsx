@@ -177,7 +177,7 @@ const Input = () => {
                       <Label htmlFor="ingredient-name">Nama Bahan</Label>
                       <InputField
                         id="ingredient-name"
-                        placeholder="Contoh: Kulit kentang, tulang ayam"
+                        placeholder="Contoh: kentang, bawang putih"
                       />
                     </div>
 
