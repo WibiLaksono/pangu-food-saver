@@ -24,11 +24,11 @@ const Index = () => {
                   Solusi Food Waste Terdepan
                 </Badge>
                 <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                  <span className="text-foreground">Kurangi </span>
+                  <span className="text-foreground">Kendalikan </span>
                   <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
                     Food Waste
                   </span>
-                  <span className="text-foreground"> dengan </span>
+                  <span className="text-foreground"> bersama </span>
                   <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
                     Pangu
                   </span>
