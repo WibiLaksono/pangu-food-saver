@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import Navbar from "@/components/ui/navbar";
 import { Link } from "react-router-dom";
 import { ArrowRight, BarChart3, Target, Users, Leaf, TrendingDown, DollarSign, Shield } from "lucide-react";
-import heroVideoSimulation from "@/assets/hero-video-simulation.mp4";
+import heroVideoSimulation from "@/assets/PANGU.mp4";
 import foodWasteSteps from "@/assets/food-waste-steps.jpg";
 import wasteStatistics from "@/assets/waste-statistics.jpg";
 
