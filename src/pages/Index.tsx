@@ -28,8 +28,7 @@ const Index = () => {
                   <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
                     Food Waste
                   </span>
-                  <span className="text-foreground"> dengan</span>
-                  <br />
+                  <span className="text-foreground"> dengan </span>
                   <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
                     Pangu
                   </span>
