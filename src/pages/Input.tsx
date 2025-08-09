@@ -177,17 +177,22 @@ const Input = () => {
                       <Label htmlFor="ingredient-name">Nama Bahan</Label>
                       <InputField
                         id="ingredient-name"
+                        onBlur={(e) => {
+                          // Generate random price between 0 and 100000 when input loses focus
+                          const randomPrice = Math.floor(Math.random() * 100001);
+                          (document.getElementById("ingredient-price") as HTMLInputElement).value = randomPrice.toString();
+                        }}
                         placeholder="Contoh: kentang, bawang putih"
                       />
                     </div>
-
 
                     <div className="space-y-2">
                       <Label htmlFor="ingredient-price">Harga Rata-rata (Rp)</Label>
                       <InputField
                         id="ingredient-price"
                         type="number"
-                        placeholder="Masukkan harga"
+                        placeholder="Otomatis terisi"
+                        readOnly
                       />
                     </div>
 
