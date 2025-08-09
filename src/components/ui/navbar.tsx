@@ -24,7 +24,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2 group">
               <div className="p-2 bg-gradient-to-br from-primary to-primary-glow rounded-lg shadow-elegant group-hover:shadow-glow transition-all duration-300">
-                <Leaf className="h-6 w-6 text-primary-foreground" />
+                <img src="/Vector.png" alt="Logo" className="h-8 w-8 object-contain" />
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
                 Pangu

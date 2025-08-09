@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import Navbar from "@/components/ui/navbar";
 import { Link } from "react-router-dom";
 import { ArrowRight, BarChart3, Target, Users, Leaf, TrendingDown, DollarSign, Shield } from "lucide-react";
-import heroVideoSimulation from "@/assets/hero-video-simulation.jpg";
+import heroVideoSimulation from "@/assets/hero-video-simulation.mp4";
 import foodWasteSteps from "@/assets/food-waste-steps.jpg";
 import wasteStatistics from "@/assets/waste-statistics.jpg";
 
@@ -71,10 +71,13 @@ const Index = () => {
 
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary-glow/20 rounded-3xl blur-3xl"></div>
-              <img 
-                src={heroVideoSimulation} 
-                alt="Video simulasi penggunaan Pangu untuk mengurangi food waste" 
-                className="relative z-10 w-full h-96 object-cover rounded-3xl shadow-glow"
+              <video
+              src={heroVideoSimulation}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="relative z-10 w-full h-96 object-cover rounded-3xl shadow-glow"
               />
             </div>
           </div>
